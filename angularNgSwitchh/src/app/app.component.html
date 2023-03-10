@@ -1,0 +1,16 @@
+<div class="main">
+  Enter which component you want to see from below options :
+  <input type="text" [(ngModel)]="inputComp" />
+  <br />
+  <br />
+  1. Component 1
+  <br />
+  2. Component 2
+
+</div>
+  <div *ngSwitch="inputComp">
+    <div *ngSwitchCase="'1'"><app-comp-one></app-comp-one></div>
+    <div *ngSwitchCase="'2'"><app-comp-two></app-comp-two></div>
+    <div *ngSwitchDefault>Welcom User !</div>
+  </div>
+<!-- <app-comp-one></app-comp-one> -->
